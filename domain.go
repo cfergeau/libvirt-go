@@ -1956,7 +1956,7 @@ func (d *Domain) PinVcpuFlags(vcpu uint, cpuMap []bool, flags DomainModification
 }
 
 type DomainIPAddress struct {
-	Type   int
+	Type   int // libvirt.IPAddrType
 	Addr   string
 	Prefix uint
 }
